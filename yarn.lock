@@ -901,7 +901,7 @@
     "lodash.clonedeep" "^4.5.0"
     "lodash.isequal" "^4.5.0"
 
-"@inertiajs/inertia@^0.10.0", "@inertiajs/inertia@^0.10.1":
+"@inertiajs/inertia@^0.10.0", "@inertiajs/inertia@^0.10.1", "@inertiajs/inertia@^0.6.0 || ^0.7.0 || ^0.8.0 || ^0.9.0 || ^0.10.0":
   "integrity" "sha512-Ntyaerh07QnpIOxC+qsteUZ9OGVWfogpg3fCkSxciaX6AZyYLT6t7IFPkefPShb9LC2G4Woh1hel4t/pMr2vRQ=="
   "resolved" "https://registry.npmjs.org/@inertiajs/inertia/-/inertia-0.10.1.tgz"
   "version" "0.10.1"
@@ -909,6 +909,13 @@
     "axios" "^0.21.1"
     "deepmerge" "^4.0.0"
     "qs" "^6.9.0"
+
+"@inertiajs/progress@^0.2.6":
+  "integrity" "sha512-ZhrP9d4QGFoAWN7+I/4lv1BWruAvOfhTKgPoMJd2PUi3aVEgn5wBzbL6heQJgCASrIQvReud5UPum4sxxoWrlA=="
+  "resolved" "https://registry.npmjs.org/@inertiajs/progress/-/progress-0.2.6.tgz"
+  "version" "0.2.6"
+  dependencies:
+    "nprogress" "^0.2.0"
 
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
@@ -3790,6 +3797,11 @@
   "version" "4.0.1"
   dependencies:
     "path-key" "^3.0.0"
+
+"nprogress@^0.2.0":
+  "integrity" "sha1-y480xTIT2JVyP8urkH6UIq28r7E="
+  "resolved" "https://registry.npmjs.org/nprogress/-/nprogress-0.2.0.tgz"
+  "version" "0.2.0"
 
 "nth-check@^2.0.0":
   "integrity" "sha512-it1vE95zF6dTT9lBsYbxvqh0Soy4SPowchj0UBGj/V6cTPnXXtQOPUbhZ6CmGzAD/rW22LQK6E96pcdJXk4A4w=="
