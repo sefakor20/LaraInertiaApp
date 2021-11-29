@@ -1,7 +1,9 @@
 <template>
-    <h1>Users</h1>
-    <Nav />
+    <Layouts>
+        <h1 class="text-3xl">Users</h1>
+    </Layouts>
 
+    <!-- Preserve page scroll -->
     <div style="margin-top: 500px">
         The current time is: {{ time }}.
     </div>
@@ -9,10 +11,11 @@
 </template>
 
 <script>
-    import  Nav  from '../Shared/Nav'
-    import {Link} from '@inertiajs/inertia-vue3'
+    import  Layouts  from '../Shared/Layouts';
+    import { Link } from '@inertiajs/inertia-vue3';
+
     export default {
-        components: { Nav, Link },
+        components: { Link, Layouts },
 
         props: {
             time: String

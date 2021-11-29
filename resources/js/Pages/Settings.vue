@@ -1,11 +1,12 @@
 <template>
-    <h1>Setting</h1>
-    <Nav />
+    <Layouts>
+        <h1 class="text-3xl">Setting</h1>
+    </Layouts>
 </template>
 
 <script>
-    import  Nav  from '../Shared/Nav'
+    import  Layouts  from '../Shared/Layouts'
     export default {
-        components: { Nav },
+        components: { Layouts },
     }
 </script>

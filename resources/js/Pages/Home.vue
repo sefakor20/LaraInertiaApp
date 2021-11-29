@@ -1,11 +1,13 @@
 <template>
-    <h1 class="text-4xl font-bold">Home</h1>
-    <Nav />
+    <Layouts>
+        <h1 class="text-3xl">Home</h1>
+    </Layouts>
 </template>
 
 <script>
-    import  Nav  from '../Shared/Nav'
+    import  Layouts  from '../Shared/Layouts';
+
     export default {
-        components: { Nav },
+        components: { Layouts },
     }
 </script>
