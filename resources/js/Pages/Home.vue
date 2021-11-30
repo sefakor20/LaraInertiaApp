@@ -4,10 +4,7 @@
     </Layouts>
 </template>
 
-<script>
+<script setup>
     import  Layouts  from '../Shared/Layouts';
-
-    export default {
-        components: { Layouts }
-    }
+    
 </script>
