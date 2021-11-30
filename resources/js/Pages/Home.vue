@@ -1,10 +1,12 @@
 <template>
-    <Layouts>
-        <h1 class="text-3xl">Home</h1>
-    </Layouts>
+    <h1 class="text-3xl">Home</h1>
 </template>
 
-<script setup>
+<script>
     import  Layouts  from '../Shared/Layouts';
-    
+
+    export default {
+        layout: Layouts
+    }
+
 </script>
