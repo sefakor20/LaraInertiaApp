@@ -8,6 +8,6 @@
     import  Layouts  from '../Shared/Layouts';
 
     export default {
-        components: { Layouts },
+        components: { Layouts }
     }
 </script>
