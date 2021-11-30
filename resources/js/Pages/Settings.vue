@@ -3,10 +3,8 @@
 </template>
 
 <script>
-    import  Layouts  from '../Shared/Layouts'
-
     export default {
-        layout: Layouts
+        
     }
 
 </script>
