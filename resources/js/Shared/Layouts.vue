@@ -24,7 +24,7 @@
     <section class="p-6">
         <div class="max-w-3xl mx-auto">
 
-            <iframe 
+            <!-- <iframe 
                 class="mb-6"
                 height="200px" 
                 width="100%" 
@@ -33,7 +33,7 @@
                 seamless 
                 src="https://player.simplecast.com/10b6871b-9efe-42db-bfd8-caa52bdc0d04?dark=false"
                 >
-            </iframe>
+            </iframe> -->
 
             <slot />
         </div>
