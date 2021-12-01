@@ -1,4 +1,6 @@
 <template>
+    <Head title="Users" />
+
     <h1 class="text-3xl">Users</h1>
 
     <!-- Preserve page scroll -->
@@ -9,14 +11,8 @@
 
 </template>
 
-<script>
-    import { Link } from '@inertiajs/inertia-vue3';
-
-    export default {
-        components: {
-            Link,
-        },
-        props: { time: String}
-    }
+<script setup>
+    
+    defineProps({ time: String });
 
 </script>
