@@ -1,13 +1,19 @@
 <template>
     <Head title="Users" />
 
-    <h1 class="text-3xl">Users</h1>
+    <div class="flex justify-between mb-6">
+        <h1 class="text-3xl">Users</h1>
+
+        <input v-model="search" type="text" placeholder="Search..." class="border px-2 rounded-lg">
+    </div>
+
 
     <!-- Preserve page scroll -->
     <!-- <div style="margin-top: 500px">
         The current time is: {{ time }}.
     </div>
     <Link href="/users" class="text-blue-500" preserve-scroll>Refresh</Link> -->
+
 
 
     <!-- list of users -->
@@ -41,12 +47,29 @@
     </div>
 
     <!-- Paginator -->
-    <Pagination :links="users.links" class="mt-6" />  
+    <Pagination :links="users.links" class="mt-6" />
 </template>
 
 <script setup>
+    import { ref, watch } from 'vue';
     import Pagination from '../Shared/Pagination';
+    import {Inertia} from '@inertiajs/inertia';
 
-    defineProps({ users: Object });
+    let props = defineProps({
+        users: Object,
+        filters: Object
+    });
+
+    // search query begins from here...
+    let search = ref(props.filters.search);
+
+    watch(search, value => {
+        // make a get request to the current page with the search query
+        Inertia.get('/users', { search: value }, {
+            preserveState: true,
+            replace: true
+        });
+    });
+    // search query ends here...
 
 </script>
